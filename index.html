@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--Slider-->
+    <style>
+        /* Kustomisasi animasi bounce */
+        @keyframes bounce {
+          0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-30px);
+          }
+          60% {
+            transform: translateY(-15px);
+          }
+        }
+        .animate-bounce-smooth {
+          animation: bounce 6s ease-in-out;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .font-sans1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .font-sans2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+      </style>
+</head>
+
+<body class="bg-white  text-black">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+         <section>
+            <header class="flex justify-between items-center p-10 w-full">
+                <nav class="w-full h-14  border-gray-300  bg-white">
+                    <div class="flex justify-between items-center ">
+                        <button class="md:hidden block focus:outline-none" id="nav-toggle">
+                            <span class="block w-8 h-1 bg-blue-600 mb-1"></span>
+                            <span class="block w-8 h-1 bg-blue-600 mb-1"></span>
+                            <span class="block w-8 h-1 bg-blue-600"></span>
+                        </button>
+                    </div>
+                    <ul id="nav-links" class="md:flex justify-center space-y-2 md:space-y-0 space-x-0 md:space-x-12 hidden md:block mt-4 md:mt-0">
+                        <li><a href="#main" class="relative font-sans2 inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Home</a></li>
+                        <li><a href="#resume" class="relative font-sans2 inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Resume</a></li>
+                        <li><a href="#skill" class="relative font-sans2 inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Skill</a></li>
+                        <li><a href="#projects" class="relative font-sans2 inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Projects</a></li>
+                        <li><a href="#contact" class="relative font-sans2 inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>   
+            
+
+        <!-- Main Content -->
+        <div class="flex-grow flex flex-col justify-center md:mr-[10rem] min-h-screen p-4 md:p-8">
+            <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12 max-w-4xl mx-auto">
+                <div class="text-center md:text-left">
+                    <h5 class="text-4xl md:text-5xl text-gray-400 font-sans1">Hi I'm <span class="text-blue-600 text-4xl md:text-5xl typed"></span></h5>
+                    <h1 class="text-5xl md:text-6xl text-blue-600 font-sans1">Yusuf Umar Thalib</h1>
+                    <p class="text-gray-600 mt-4 text-base md:text-lg">Hello, I'm a Front-end developer and a student at SMK Plus Pelita Nusantara, majoring in Software Engineering (Rekayasa Perangkat Lunak). I have a strong passion for coding, especially in front-end development. I enjoy bringing ideas to life through web design and development, creating user-friendly and visually appealing websites.</p>
+                    <div class="mt-8 space-x-0 space-y-4 md:space-y-0 md:space-x-4">
+                        <a href="Cv Yusuf.pdf" download class="inline-block bg-blue-600 text-white py-4 px-8 rounded-full shadow hover:bg-blue-700 text-lg">
+                            Download CV </a>
+                        <a href="#contact" class="inline-block bg-gray-800 text-white py-4 px-8 rounded-full shadow hover:bg-gray-700 text-lg">Contact</a>
+                    </div>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-500"><i class="fa-brands fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         </section>
+        <!-- Resume Section -->
+        <section id="resume" class="bg-gray-900 py-16">
+            <div class="container mx-auto px-6 lg:px-8">
+                <!-- Header Section -->
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-blue-600 ">Resume</h2>
+                    <p class="text-gray-600 mt-4">Here is a brief overview of my education and experience.</p>
+                </div>
+        
+                <!-- Resume Content -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        
+                    <!-- Summary Section -->
+                    <div class="col-span-1">
+                        <div class="bg-white shadow-md rounded-lg p-8">
+                            <h3 class="text-3xl font-semibold text-gray-800 mb-6 flex items-center">
+                                <i class="fas fa-user-graduate mr-4 text-blue-500"></i> Summary
+                            </h3>
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                I am a vocational school student majoring in Software Engineering (RPL) who is enthusiastic and committed to developing technical skills in the world of programming and software development.
+                            </p>
+                            <ul class="text-gray-700 leading-relaxed">
+                                <li class="flex items-center">
+                                    <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i> Depok, West Java
+                                </li>
+                                <li class="flex items-center mt-2">
+                                    <i class="fas fa-phone-alt mr-2 text-blue-500"></i> +62-857-1012-9738
+                                </li>
+                                <li class="flex items-center mt-2">
+                                    <i class="fas fa-envelope mr-2 text-blue-500"></i> yusufumarthalib0770@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Education Section -->
+                    <div class="col-span-2">
+                        <div class="bg-white shadow-md rounded-lg p-8">
+                            <h3 class="text-3xl font-semibold text-gray-800 mb-6 flex items-center">
+                                <i class="fas fa-graduation-cap mr-4 text-blue-500"></i> Education
+                            </h3>
+        
+                            <div class="space-y-8">
+                                <div data-aos="fade-up">
+                                    <div class="border-l-4 border-blue-700 pl-4 relative">
+                                        <div class="absolute w-4 h-4 bg-blue-700 rounded-full -left-2 top-0"></div>
+                                        <h4 class="text-lg font-semibold text-gray-800 uppercase">vocational High School</h4>
+                                        <h5 class="text-md font-semibold bg-blue-100 inline-block px-4 py-2 mt-2">2023 - Now</h5>
+                                        <p class="text-gray-600 italic mt-2">SMK Plus Pelita Nusantara</p>
+                                        <p class="text-gray-600">Ciriung, Kec. Cibinong, Kabupaten Bogor, Jawa Barat 16918</p>
+                                    </div>
+                                </div>
+        
+                                <div data-aos="fade-up">
+                                    <div class="border-l-4 border-blue-700 pl-4 mt-8 relative">
+                                        <div class="absolute w-4 h-4 bg-blue-700 rounded-full -left-2 top-0"></div>
+                                        <h4 class="text-lg font-semibold text-gray-800 uppercase">Junior High School</h4>
+                                        <h5 class="text-md font-semibold bg-blue-100 inline-block px-4 py-2 mt-2">2020 - 2023</h5>
+                                        <p class="text-gray-600 italic mt-2">SMP Bhakti Jaya</p>
+                                        <p class="text-gray-600">Jatijajar, Kec. Tapos, Kota Depok, Jawa Barat 16451</p>
+                                    </div>
+                                </div>
+        
+                                <div data-aos="fade-up">
+                                    <div class="border-l-4 border-blue-700 pl-4 mt-8 relative">
+                                        <div class="absolute w-4 h-4 bg-blue-700 rounded-full -left-2 top-0"></div>
+                                        <h4 class="text-lg font-semibold text-gray-800 uppercase">Elementary School</h4>
+                                        <h5 class="text-md font-semibold bg-blue-100 inline-block px-4 py-2 mt-2">2014 - 2020</h5>
+                                        <p class="text-gray-600 italic mt-2">SDN Sukamaju Baru 3</p>
+                                        <p class="text-gray-600">Jatijajar, Kec. Tapos, Kota Depok, Jawa Barat 16451</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        </section>
+        
+
+        <!-- Skills Section -->
+<section id="skill" class="bg-gray-900 min-h-screen py-16">
+    <div class="container mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-blue-600  mb-4">My Skills</h2>
+            <p class="text-gray-700">A showcase of my technical abilities and software skills I'm proficient in.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            <!-- HTML -->
+            <div class="group relative flex flex-col items-center">
+                <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-xl">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="HTML" class="h-20">
+                </div>
+                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl  duration-300">HTML</span>
+            </div>
+
+            <!-- CSS -->
+            <div class="group relative flex flex-col items-center">
+                <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" class="h-20">
+                </div>
+                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">CSS</span>
+            </div>
+
+            <!-- Javascript -->
+            <div class="group relative flex flex-col items-center">
+                <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Javascript" class="h-20">
+                </div>
+                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Javascript</span>
+            </div>
+
+            <!-- PHP -->
+            <div class="group relative flex flex-col items-center">
+                <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png" alt="PHP" class="h-20">
+                </div>
+                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">PHP</span>
+            </div>
+
+            <!-- Tailwind -->
+            <div class="group relative flex flex-col items-center">
+                <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png?20230715030042" alt="Tailwind" class="h-20">
+                </div>
+                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Tailwind</span>
+            </div>
+
+            <!-- Microsoft Word -->
+            <div class="group relative flex flex-col items-center">
+                <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png" alt="Microsoft Word" class="h-20">
+                </div>
+                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Microsoft Word</span>
+            </div>
+
+            <!-- Microsoft Excel -->
+            <div class="group relative flex flex-col items-center">
+                <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Microsoft Excel" class="h-20">
+                </div>
+                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Microsoft Excel</span>
+            </div>
+
+            <!-- Microsoft PowerPoint -->
+            <div class="group relative flex flex-col items-center">
+                <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Microsoft_PowerPoint_2013-2019_logo.svg/610px-Microsoft_PowerPoint_2013-2019_logo.svg.png" class="h-20">
+                </div>
+                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Microsoft PowerPoint</span>
+            </div>
+
+            <!-- Figma -->
+            <div class="group relative flex flex-col items-center">
+                <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="h-20">
+                </div>
+                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Figma</span>
+            </div>
+
+            <!-- Canva -->
+            <div class="group relative flex flex-col items-center">
+                <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/600px-Canva_icon_2021.svg.png?20220821125247" alt="Canva" class="h-20">
+                </div>
+                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Canva</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="bg-gray-900 py-16">
+    <div class="container mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-white mb-4">My Projects</h2>
+            <p class="text-gray-400">A selection of my most recent work</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <div class="p-6">
+                    <img src="img/talent.png" alt="Personal Website" class="w-full h-40 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Form Talent & Eskul</h3>
+                    <p class="text-gray-400 mb-4">I make Form for student to regist their Talent and Eskul with CRUD Method using PHP.</p>
+                    <span class="text-yellow-400">CRUD PHP, Tailwind</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <div class="p-6">
+                    <img src="img/porto.png" alt="Sahabat Muslim" class="w-full h-40 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Portofolio Website</h3>
+                    <p class="text-gray-400 mb-4">.</p>
+                    <span class="text-yellow-400">HTML, Bootstrap</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <div class="p-6">
+                    <img src="img/loginpage.png" alt="Login Page" class="w-full h-40 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Login Page</h3>
+                    <p class="text-gray-400 mb-4">Created with HTML and PHP, this login page offers a simple yet effective way for users to access their accounts. It integrates validation and secure data handling, making it ideal for websites that need a straightforward authentication system.</p>
+                    <span class="text-yellow-400">PHP, HTML</span>
+                </div>
+            </div>
+            <!-- Project 4 -->
+<div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+    <div class="p-6">
+        <img src="img/rumah.png" alt="Website Pemasaran" class="w-full h-40 object-cover mb-4">
+        <h3 class="text-2xl font-semibold text-white mb-2">Website Pemasaran</h3>
+        <p class="text-gray-400 mb-4">Find your dream home easily with our real estate platform. We offer a variety of homes designed to meet modern family needs. From minimalistic houses to luxurious properties, discover your ideal home with us.</p>
+        <span class="text-yellow-400">HTML, Tailwind</span>
+    </div>
+</div>
+
+<!-- Project 5 -->
+<div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+    <div class="p-6">
+        <img src="img/to do.png" alt="To Do List" class="w-full h-40 object-cover mb-4">
+        <h3 class="text-2xl font-semibold text-white mb-2">To Do List</h3>
+        <p class="text-gray-400 mb-4">This to-do list application is built with HTML, CSS, and JavaScript, providing a simple and efficient way to organize tasks. With features like adding, editing, and deleting tasks, users can manage their daily tasks with ease. The user interface is responsive and intuitive.</p>
+        <span class="text-yellow-400">HTML, CSS, Javascript</span>
+    </div>
+</div>
+
+<!-- Project 6 -->
+<div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+    <div class="p-6">
+        <img src="img/laravelcrud.png" alt="Weather Forecast App" class="w-full h-40 object-cover mb-4">
+        <h3 class="text-2xl font-semibold text-white mb-2">Laravel CRUD</h3>
+        <p class="text-gray-400 mb-4">This product management system is developed using Laravel, providing a full-featured CRUD (Create, Read, Update, Delete) solution. It's designed to help manage products easily, allowing users to add, edit, delete, and view products with seamless navigation and responsive design.</p>
+        <span class="text-yellow-400">Laravel, Bootstrap</span>
+    </div>
+</div>
+
+        </div>
+    </div>
+    
+</section>
+<!-- Contact Me Section -->
+<section id="contact" class="bg-gray-900 py-16">
+    <div class="container mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-white mb-4">Contact Me</h2>
+            <p class="text-gray-400">I'd love to hear from you!</p>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center">
+            <div class="md:w-1/2 bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl p-6">
+                <h3 class="text-2xl font-semibold text-white mb-4">Get in Touch</h3>
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-400 mb-1">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-2 rounded bg-gray-700 text-white" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-400 mb-1">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-2 rounded bg-gray-700 text-white" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-400 mb-1">Message</label>
+                        <textarea id="message" name="message" class="w-full p-2 rounded bg-gray-700 text-white" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-yellow-400 text-gray-900 font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition duration-200">Send Message</button>
+                </form>
+            </div>
+            <div class="md:w-1/2 md:ml-8 mt-8 md:mt-0">
+                <h3 class="text-2xl font-semibold text-white mb-4">Connect with Me</h3>
+                <p class="text-gray-400 mb-4">Feel free to reach out through any of the platforms below:</p>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="mailto:yusufthalibb@gmail.com" class="hover:text-yellow-400">Email : yusufthalibb@gmail.com</a></li>
+                    <li><a href="mailto:yusufthalibb@gmail.com" class="hover:text-yellow-400">No : 0857-1012-9738</a></li>
+                    <li><a href="" target="_blank" class="hover:text-yellow-400">LinkedIn : Yusufthalibb</a></li>
+                    <li><a href="https://github.com/Yusufthalibb" target="_blank" class="hover:text-yellow-400">GitHub : Yusufthalibb</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        
+    </div>
+
+    <!-- Typed.js for typing effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        const toggleBtn = document.querySelector('#nav-toggle');
+        const navLinks = document.querySelector('#nav-links');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+        });
+
+        var typed = new Typed('.typed', {
+            strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
