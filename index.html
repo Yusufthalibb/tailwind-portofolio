@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio Website Design</title>
+    <title>Portofolio Yusufthalibb</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Animasi -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Slider-->
     <style>
         /* Kustomisasi animasi bounce */
@@ -40,6 +42,7 @@
             font-weight: 300;
             font-style: normal;
         }
+       
       </style>
 </head>
 
@@ -56,45 +59,51 @@
                             <span class="block w-8 h-1 bg-blue-600"></span>
                         </button>
                     </div>
-                    <ul id="nav-links" class="md:flex justify-center space-y-2 md:space-y-0 space-x-0 md:space-x-12 hidden md:block mt-4 md:mt-0">
-                        <li><a href="#main" class="relative font-sans2 inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Home</a></li>
-                        <li><a href="#resume" class="relative font-sans2 inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Resume</a></li>
-                        <li><a href="#skill" class="relative font-sans2 inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Skill</a></li>
-                        <li><a href="#projects" class="relative font-sans2 inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Projects</a></li>
-                        <li><a href="#contact" class="relative font-sans2 inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Contact</a></li>
+                    <ul id="nav-links" class="md:flex justify-center space-y-2 md:space-y-0 space-x-0 md:space-x-12 hidden md:block mt-4 md:mt-0 font-thin" data-aos="fade-down" data-aos-duration="2500" >
+                        <li><a href="#main" class="relative  font-semibold inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Home</a></li>
+                        <li><a href="#resume" class="relative  font-semibold inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Resume</a></li>
+                        <li><a href="#skill" class="relative  font-semibold inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Skill</a></li>
+                        <li><a href="#projects" class="relative  font-semibold inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Projects</a></li>
+                        <li><a href="#contact" class="relative  font-semibold inline-block text-2xl after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-blue-500">Contact</a></li>
                     </ul>
+                    
                 </nav>
             </header>   
             
 
         <!-- Main Content -->
-        <div class="flex-grow flex flex-col justify-center md:mr-[10rem] min-h-screen p-4 md:p-8">
+        <div class="flex-grow flex flex-col justify-center md:mr-[10rem] min-h-screen p-4 md:p-8" >
             <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12 max-w-4xl mx-auto">
                 <div class="text-center md:text-left">
-                    <h5 class="text-4xl md:text-5xl text-gray-400 font-sans1">Hi I'm <span class="text-blue-600 text-4xl md:text-5xl typed"></span></h5>
-                    <h1 class="text-5xl md:text-6xl text-blue-600 font-sans1">Yusuf Umar Thalib</h1>
-                    <p class="text-gray-600 mt-4 text-base md:text-lg">Hello, I'm a Front-end developer and a student at SMK Plus Pelita Nusantara, majoring in Software Engineering (Rekayasa Perangkat Lunak). I have a strong passion for coding, especially in front-end development. I enjoy bringing ideas to life through web design and development, creating user-friendly and visually appealing websites.</p>
+                    <h5 class="text-4xl md:text-5xl text-gray-400 font-sans1 hover:text-blue-600 hover:cursor-grab" data-aos="fade-right" data-aos-offset="200"data-aos-easing="ease-in-sine" data-aos-duration="2000">Hi I'm <span class="text-blue-600 text-4xl md:text-5xl typed"></span></h5>
+                    <h1 class="text-5xl md:text-6xl text-blue-600 font-sans1" data-aos="fade-up" data-aos-duration="3000">Yusuf Umar Thalib</h1>
+                    <p class="text-gray-600 mt-4 text-base md:text-lg" data-aos="fade-up" data-aos-duration="3000">Hello, I'm a Front-end developer and a student at SMK Plus Pelita Nusantara, majoring in Software Engineering (Rekayasa Perangkat Lunak). I have a strong passion for coding, especially in front-end development. I enjoy bringing ideas to life through web design and development, creating user-friendly and visually appealing websites.</p>
                     <div class="mt-8 space-x-0 space-y-4 md:space-y-0 md:space-x-4">
-                        <a href="Cv Yusuf.pdf" download class="inline-block bg-blue-600 text-white py-4 px-8 rounded-full shadow hover:bg-blue-700 text-lg">
-                            Download CV </a>
-                        <a href="#contact" class="inline-block bg-gray-800 text-white py-4 px-8 rounded-full shadow hover:bg-gray-700 text-lg">Contact</a>
+                        <a href="Cv Yusuf.pdf" download class="inline-block bg-blue-600 text-white py-4 px-8 rounded-xl shadow transition-all duration-500 ease-in-out hover:shadow-[0_0_25px_10px] hover:shadow-blue-500/80 hover:transform hover:-translate-y-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" data-aos-anchor-placement="center-bottom">
+                            Download CV</a>
+                    <a href="#contact" class="inline-block bg-gray-800 text-white py-4 px-8 rounded-xl shadow transition-all duration-500 ease-in-out hover:shadow-[0_0_25px_10px] hover:shadow-gray-500/80 hover:bg-gray-700 text-lg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" data-aos-anchor-placement="center-bottom">Contact</a>
+
                     </div>
-                    <div class="mt-8 flex justify-center md:justify-start space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-blue-500"><i class="fa-brands fa-facebook text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-blue-500"><i class="fa-brands fa-linkedin text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-blue-500"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+                        <a href="https://web.facebook.com/yusuf.umarthalib" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fa-brands fa-facebook text-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/yusufthalibb/" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                        <a href="https://www.instagram.com/charloteezx/" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fa-brands fa-instagram text-xl"></i></a>
                     </div>
+                    
                 </div>
             </div>
-        </div>
          </section>
         <!-- Resume Section -->
         <section id="resume" class="bg-gray-900 py-16">
             <div class="container mx-auto px-6 lg:px-8">
                 <!-- Header Section -->
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold text-blue-600 ">Resume</h2>
-                    <p class="text-gray-600 mt-4">Here is a brief overview of my education and experience.</p>
+                <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="relative flex justify-center items-center">
+                        <h1 class="absolute lg:text-[20rem] opacity-10 font-sans2 mt-18 text-white mb-4" >
+                            Resume </h1>
+                        <h2 class="relative text-6xl font-sans2  text-blue-600   mb-4" data-aos="fade-up" data-aos="fade-up" data-aos-duration="3000">My Resume</h2>
+                    </div>
+                    <p class="text-white mt-4">Here is a brief overview of my education and experience.</p>
                 </div>
         
                 <!-- Resume Content -->
@@ -102,14 +111,14 @@
         
                     <!-- Summary Section -->
                     <div class="col-span-1">
-                        <div class="bg-white shadow-md rounded-lg p-8">
-                            <h3 class="text-3xl font-semibold text-gray-800 mb-6 flex items-center">
+                        <div class="bg-white shadow-md rounded-lg p-8" data-aos="fade-up" data-aos-duration="2000">
+                            <h3 class="text-3xl font-semibold text-gray-800 mb-6 flex items-center" data-aos="fade-up" data-aos-duration="2900">
                                 <i class="fas fa-user-graduate mr-4 text-blue-500"></i> Summary
                             </h3>
-                            <p class="text-gray-700 leading-relaxed mb-6">
+                            <p class="text-gray-700 leading-relaxed mb-6" data-aos="fade-up" data-aos-duration="2900">
                                 I am a vocational school student majoring in Software Engineering (RPL) who is enthusiastic and committed to developing technical skills in the world of programming and software development.
                             </p>
-                            <ul class="text-gray-700 leading-relaxed">
+                            <ul class="text-gray-700 leading-relaxed" data-aos="fade-up" data-aos-duration="2900">
                                 <li class="flex items-center">
                                     <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i> Depok, West Java
                                 </li>
@@ -125,23 +134,23 @@
         
                     <!-- Education Section -->
                     <div class="col-span-2">
-                        <div class="bg-white shadow-md rounded-lg p-8">
-                            <h3 class="text-3xl font-semibold text-gray-800 mb-6 flex items-center">
-                                <i class="fas fa-graduation-cap mr-4 text-blue-500"></i> Education
+                        <div class="bg-white shadow-md rounded-lg p-8" data-aos="fade-up" data-aos-duration="2000">
+                            <h3 class="text-3xl font-semibold text-gray-800 mb-6 flex items-center" data-aos="fade-up" data-aos-duration="2900">
+                                <i class="fas fa-graduation-cap mr-4 text-blue-500" data-aos="fade-up" data-aos-duration="2800"></i> Education
                             </h3>
         
                             <div class="space-y-8">
-                                <div data-aos="fade-up">
+                                <div data-aos="fade-up" data-aos-duration="2900">
                                     <div class="border-l-4 border-blue-700 pl-4 relative">
                                         <div class="absolute w-4 h-4 bg-blue-700 rounded-full -left-2 top-0"></div>
                                         <h4 class="text-lg font-semibold text-gray-800 uppercase">vocational High School</h4>
-                                        <h5 class="text-md font-semibold bg-blue-100 inline-block px-4 py-2 mt-2">2023 - Now</h5>
+                                        <h5 class="text-md font-semibold bg-blue-100 inline-block px-4 py-2 mt-2 hover ">2023 - Now</h5>
                                         <p class="text-gray-600 italic mt-2">SMK Plus Pelita Nusantara</p>
                                         <p class="text-gray-600">Ciriung, Kec. Cibinong, Kabupaten Bogor, Jawa Barat 16918</p>
                                     </div>
                                 </div>
         
-                                <div data-aos="fade-up">
+                                <div data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                                     <div class="border-l-4 border-blue-700 pl-4 mt-8 relative">
                                         <div class="absolute w-4 h-4 bg-blue-700 rounded-full -left-2 top-0"></div>
                                         <h4 class="text-lg font-semibold text-gray-800 uppercase">Junior High School</h4>
@@ -151,7 +160,7 @@
                                     </div>
                                 </div>
         
-                                <div data-aos="fade-up">
+                                <div data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                                     <div class="border-l-4 border-blue-700 pl-4 mt-8 relative">
                                         <div class="absolute w-4 h-4 bg-blue-700 rounded-full -left-2 top-0"></div>
                                         <h4 class="text-lg font-semibold text-gray-800 uppercase">Elementary School</h4>
@@ -163,7 +172,6 @@
                             </div>
                         </div>
                     </div>
-        
         </section>
         
 
@@ -171,173 +179,255 @@
 <section id="skill" class="bg-gray-900 min-h-screen py-16">
     <div class="container mx-auto px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-blue-600  mb-4">My Skills</h2>
-            <p class="text-gray-700">A showcase of my technical abilities and software skills I'm proficient in.</p>
+            <div class="relative flex justify-center items-center" data-aos="fade-up" data-aos="fade-up" data-aos-duration="2000">
+                <h1 class="absolute lg:text-[20rem] opacity-10 font-sans2 mt-18 text-white mb-4" >
+                    Skills
+                </h1>
+                
+                <h2 class="relative text-6xl font-sans2  text-blue-600   mb-4" data-aos="fade-up" data-aos="fade-up" data-aos-duration="3000">My Skills</h2>
+            </div>
+        
+            <p class="text-white" data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">A showcase of my technical abilities and software skills I'm proficient in.</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div class="text-4xl font-sans1 text-white justify-center text-center content-center rounded-lg ml-[5.5rem] sm:ml-9 md:ml-12 mb-16 bg-blue-500 w-52 h-12" data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
+            <h2>Hard Skill</h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8" data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
             <!-- HTML -->
-            <div class="group relative flex flex-col items-center">
+            <div class="group relative flex flex-col items-center"data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                 <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-xl">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="HTML" class="h-20">
                 </div>
-                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl  duration-300">HTML</span>
+                <span class="text-xl text-white mt-7 font-sans2 group-hover:text-blue-600  group-hover:text-2xl  duration-300">HTML</span>
             </div>
 
             <!-- CSS -->
-            <div class="group relative flex flex-col items-center">
+            <div class="group relative flex flex-col items-center"data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                 <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" class="h-20">
                 </div>
-                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">CSS</span>
+                <span class="text-xl text-white mt-7 font-sans2 group-hover:text-blue-600  group-hover:text-2xl  duration-300">CSS</span>
             </div>
 
             <!-- Javascript -->
-            <div class="group relative flex flex-col items-center">
+            <div class="group relative flex flex-col items-center"data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                 <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Javascript" class="h-20">
                 </div>
-                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Javascript</span>
+                <span class="text-xl text-white mt-7 font-sans2 group-hover:text-blue-600  group-hover:text-2xl  duration-300">Javascript</span>
             </div>
 
             <!-- PHP -->
-            <div class="group relative flex flex-col items-center">
+            <div class="group relative flex flex-col items-center"data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                 <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png" alt="PHP" class="h-20">
                 </div>
-                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">PHP</span>
+                <span class="text-xl text-white mt-7 font-sans2 group-hover:text-blue-600  group-hover:text-2xl  duration-300">PHP</span>
             </div>
 
             <!-- Tailwind -->
-            <div class="group relative flex flex-col items-center">
+            <div class="group relative flex flex-col items-center"data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                 <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png?20230715030042" alt="Tailwind" class="h-20">
                 </div>
-                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Tailwind</span>
+                <span class="text-xl text-white mt-7 font-sans2 group-hover:text-blue-600  group-hover:text-2xl  duration-300">Tailwind</span>
             </div>
 
             <!-- Microsoft Word -->
-            <div class="group relative flex flex-col items-center">
+            <div class="group relative flex flex-col items-center"data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                 <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png" alt="Microsoft Word" class="h-20">
                 </div>
-                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Microsoft Word</span>
+                <span class="text-xl text-white mt-7 font-sans2 group-hover:text-blue-600  group-hover:text-2xl  duration-300">Microsoft Word</span>
             </div>
 
             <!-- Microsoft Excel -->
-            <div class="group relative flex flex-col items-center">
+            <div class="group relative flex flex-col items-center"data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                 <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Microsoft Excel" class="h-20">
                 </div>
-                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Microsoft Excel</span>
+                <span class="text-xl text-white mt-7 font-sans2 group-hover:text-blue-600  group-hover:text-2xl  duration-300">Microsoft Excel</span>
             </div>
 
             <!-- Microsoft PowerPoint -->
-            <div class="group relative flex flex-col items-center">
+            <div class="group relative flex flex-col items-center"data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                 <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Microsoft_PowerPoint_2013-2019_logo.svg/610px-Microsoft_PowerPoint_2013-2019_logo.svg.png" class="h-20">
                 </div>
-                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Microsoft PowerPoint</span>
+                <span class="text-xl text-white mt-7 font-sans2 group-hover:text-blue-600  group-hover:text-2xl  duration-300">Microsoft PowerPoint</span>
             </div>
 
             <!-- Figma -->
-            <div class="group relative flex flex-col items-center">
+            <div class="group relative flex flex-col items-center"data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                 <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="h-20">
                 </div>
-                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Figma</span>
+                <span class="text-xl text-white mt-7 font-sans2 group-hover:text-blue-600  group-hover:text-2xl  duration-300">Figma</span>
             </div>
 
             <!-- Canva -->
-            <div class="group relative flex flex-col items-center">
+            <div class="group relative flex flex-col items-center"data-aos="fade-up" data-aos="fade-up" data-aos-duration="2900">
                 <div class="bg-white border border-gray-300 w-40 h-40 rounded-lg flex items-center justify-center transform transition-transform duration-300  cursor-pointer hover:animate-bounce  shadow-lg">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/600px-Canva_icon_2021.svg.png?20220821125247" alt="Canva" class="h-20">
                 </div>
-                <span class="text-lg text-gray-800 mt-7 font-semibold group-hover:text-blue-600  group-hover:text-xl transition-colors duration-300">Canva</span>
+                <span class="text-xl text-white mt-7 font-sans2 group-hover:text-blue-600  group-hover:text-2xl  duration-300">Canva</span>
             </div>
-
+         </div>
+         <div class="text-4xl font-sans1 text-white justify-center text-center content-center mt-14 rounded-lg ml-[5.5rem] sm:ml-9 md:ml-12 mb-16 bg-blue-500 w-52 h-12" data-aos="fade-up" data-aos-duration="2900">
+            <h2>Soft Skill</h2>
         </div>
-    </div>
+        <div class="col-span-2 flex justify-center">
+            <div class="bg-white shadow-md rounded-lg p-8 w-3/4 md:w-2/3 lg:w-1/2" data-aos="fade-up" data-aos-duration="2000">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-6 flex items-center" data-aos="fade-up" data-aos-duration="2900">
+                    <i class="fas fa-user-friends mr-4 text-blue-500" data-aos="fade-up" data-aos-duration="2800"></i> Soft Skills
+                </h3>
+                
+                <ul class="text-lg text-gray-700 ml-4 space-y-4" data-aos="fade-up" data-aos-duration="3000">
+                    <li>
+                        <strong>Problem-Solving:</strong> Skilled at analyzing challenges and finding effective solutions, a key competency in software development and troubleshooting.
+                    </li>
+                    <li>
+                        <strong>Teamwork and Collaboration:</strong> Works well in team environments, values diverse perspectives, and contributes constructively to group goals and projects.
+                    </li>
+                    <li>
+                        <strong>Adaptability:</strong> Quickly adapts to new tools, technologies, and environments, essential in the constantly evolving field of software engineering.
+                    </li>
+                    <li>
+                        <strong>Communication:</strong> Able to clearly explain technical information to both technical and non-technical audiences, enhancing understanding and collaboration.
+                    </li>
+                    <li>
+                        <strong>Time Management:</strong> Manages tasks efficiently, meeting project deadlines and balancing multiple responsibilities as required.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        </div>
+        </div>      
 </section>
 <!-- Projects Section -->
 <section id="projects" class="bg-gray-900 py-16">
     <div class="container mx-auto px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-white mb-4">My Projects</h2>
-            <p class="text-gray-400">A selection of my most recent work</p>
+            <div class="relative flex justify-center items-center" data-aos="fade-up" data-aos-duration="2000">
+                <h1 class="absolute lg:text-[20rem] opacity-10 font-sans2 mt-18 text-white mb-4">
+                    Projects  
+                </h1>  
+                <h2 class="relative text-6xl font-sans2 text-blue-600 mb-4" data-aos="fade-up" data-aos-duration="2800">
+                    My Projects
+                </h2>
+            </div>
+            <p class="text-gray-400" data-aos="fade-up" data-aos-duration="3000">
+                A selection of my most recent work
+            </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-duration="3000">
             <!-- Project 1 -->
-            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <a href="http://localhost/Eskul%20dan%20Talent/" class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500 hover:shadow-[0_0_25px_10px] hover:-translate-y-2">
                 <div class="p-6">
                     <img src="img/talent.png" alt="Personal Website" class="w-full h-40 object-cover mb-4">
                     <h3 class="text-2xl font-semibold text-white mb-2">Form Talent & Eskul</h3>
                     <p class="text-gray-400 mb-4">I make Form for student to regist their Talent and Eskul with CRUD Method using PHP.</p>
                     <span class="text-yellow-400">CRUD PHP, Tailwind</span>
                 </div>
-            </div>
+            </a>
 
             <!-- Project 2 -->
-            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <a href="#home" class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500 hover:shadow-[0_0_25px_10px] hover:-translate-y-2">
                 <div class="p-6">
-                    <img src="img/porto.png" alt="Sahabat Muslim" class="w-full h-40 object-cover mb-4">
-                    <h3 class="text-2xl font-semibold text-white mb-2">Portofolio Website</h3>
-                    <p class="text-gray-400 mb-4">.</p>
+                    <img src="img/portofolio.png" alt="Portfolio Website" class="w-full h-40 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Portfolio Website</h3>
+                    <p class="text-gray-400 mb-4">A professional portfolio website built with modern design.</p>
                     <span class="text-yellow-400">HTML, Bootstrap</span>
                 </div>
-            </div>
+            </a>
 
             <!-- Project 3 -->
-            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <a href="http://localhost/loginwork/" class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500 hover:shadow-[0_0_25px_10px] hover:-translate-y-2">
                 <div class="p-6">
                     <img src="img/loginpage.png" alt="Login Page" class="w-full h-40 object-cover mb-4">
                     <h3 class="text-2xl font-semibold text-white mb-2">Login Page</h3>
-                    <p class="text-gray-400 mb-4">Created with HTML and PHP, this login page offers a simple yet effective way for users to access their accounts. It integrates validation and secure data handling, making it ideal for websites that need a straightforward authentication system.</p>
+                    <p class="text-gray-400 mb-4">A secure login page with HTML and PHP, featuring validation and secure data handling.</p>
                     <span class="text-yellow-400">PHP, HTML</span>
                 </div>
-            </div>
+            </a>
+
             <!-- Project 4 -->
-<div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="p-6">
-        <img src="img/rumah.png" alt="Website Pemasaran" class="w-full h-40 object-cover mb-4">
-        <h3 class="text-2xl font-semibold text-white mb-2">Website Pemasaran</h3>
-        <p class="text-gray-400 mb-4">Find your dream home easily with our real estate platform. We offer a variety of homes designed to meet modern family needs. From minimalistic houses to luxurious properties, discover your ideal home with us.</p>
-        <span class="text-yellow-400">HTML, Tailwind</span>
-    </div>
-</div>
+            <a href="https://yusufthalibb.github.io/Webrumah/" class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500 hover:shadow-[0_0_25px_10px] hover:-translate-y-2">
+                <div class="p-6">
+                    <img src="img/rumah.png" alt="Real Estate Platform" class="w-full h-40 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Real Estate Platform</h3>
+                    <p class="text-gray-400 mb-4">Find your dream home with our easy-to-use real estate platform offering various home options.</p>
+                    <span class="text-yellow-400">HTML, Tailwind</span>
+                </div>
+            </a>
 
-<!-- Project 5 -->
-<div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="p-6">
-        <img src="img/to do.png" alt="To Do List" class="w-full h-40 object-cover mb-4">
-        <h3 class="text-2xl font-semibold text-white mb-2">To Do List</h3>
-        <p class="text-gray-400 mb-4">This to-do list application is built with HTML, CSS, and JavaScript, providing a simple and efficient way to organize tasks. With features like adding, editing, and deleting tasks, users can manage their daily tasks with ease. The user interface is responsive and intuitive.</p>
-        <span class="text-yellow-400">HTML, CSS, Javascript</span>
-    </div>
-</div>
+            <!-- Project 5 -->
+            <a href="https://to-do-js-lilac.vercel.app/" class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500 hover:shadow-[0_0_25px_10px] hover:-translate-y-2">
+                <div class="p-6">
+                    <img src="img/to do.png" alt="To Do List" class="w-full h-40 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">To Do List</h3>
+                    <p class="text-gray-400 mb-4">A to-do list app with task management features, built using HTML, CSS, and JavaScript.</p>
+                    <span class="text-yellow-400">HTML, CSS, JavaScript</span>
+                </div>
+            </a>
 
-<!-- Project 6 -->
-<div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="p-6">
-        <img src="img/laravelcrud.png" alt="Weather Forecast App" class="w-full h-40 object-cover mb-4">
-        <h3 class="text-2xl font-semibold text-white mb-2">Laravel CRUD</h3>
-        <p class="text-gray-400 mb-4">This product management system is developed using Laravel, providing a full-featured CRUD (Create, Read, Update, Delete) solution. It's designed to help manage products easily, allowing users to add, edit, delete, and view products with seamless navigation and responsive design.</p>
-        <span class="text-yellow-400">Laravel, Bootstrap</span>
-    </div>
-</div>
+            <!-- Project 6 -->
+            <a href="http://127.0.0.1:8000/products" class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500 hover:shadow-[0_0_25px_10px] hover:-translate-y-2">
+                <div class="p-6">
+                    <img src="img/laravelcrud.png" alt="Laravel CRUD" class="w-full h-40 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Laravel CRUD</h3>
+                    <p class="text-gray-400 mb-4">A product management system with full CRUD functionality, developed using Laravel.</p>
+                    <span class="text-yellow-400">Laravel, Bootstrap</span>
+                </div>
+            </a>
 
+            <!-- Project 7 -->
+            <a href="https://wedding-invitation-nine-taupe.vercel.app/" class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500 hover:shadow-[0_0_25px_10px] hover:-translate-y-2">
+                <div class="p-6">
+                    <img src="img/undangan.png" alt="Digital Wedding Invitation" class="w-full h-40 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Digital Wedding Invitation</h3>
+                    <p class="text-gray-400 mb-4">A beautifully designed digital wedding invitation with modern web technologies.</p>
+                    <span class="text-yellow-400">HTML, CSS, JavaScript</span>
+                </div>
+            </a>
+
+            <!-- Project 8 -->
+            <a href="https://miniblog-htmlcss.vercel.app/?vercelToolbarCode=xaUWBqTZaTxNyBZ" class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500 hover:shadow-[0_0_25px_10px] hover:-translate-y-2">
+                <div class="p-6">
+                    <img src="img/blog.png" alt="Blog" class="w-full h-40 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Mini Blog</h3>
+                    <p class="text-gray-400 mb-4">An engaging blog built with clean design and optimized for readability.</p>
+                    <span class="text-yellow-400">HTML, CSS, JavaScript</span>
+                </div>
+            </a>
+
+            <!-- Project 9 -->
+            <a href="http://localhost:5173/react-calculator/" class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500 hover:shadow-[0_0_25px_10px] hover:-translate-y-2">
+                <div class="p-6">
+                    <img src="img/calculator.png" alt="Calculator Project" class="w-full h-40 object-cover mb-4">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Calculator Project</h3>
+                    <p class="text-gray-400 mb-4">A functional calculator app built using modern web technologies.</p>
+                    <span class="text-yellow-400">HTML, CSS, React JS</span>
+                </div>
+            </a>
         </div>
     </div>
-    
 </section>
+
 <!-- Contact Me Section -->
 <section id="contact" class="bg-gray-900 py-16">
     <div class="container mx-auto px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-white mb-4">Contact Me</h2>
-            <p class="text-gray-400">I'd love to hear from you!</p>
-        </div>
-        <div class="flex flex-col md:flex-row justify-center">
-            <div class="md:w-1/2 bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl p-6">
+            <div class="relative flex justify-center items-center" data-aos="fade-up" data-aos-duration="2000">
+                <h1 class="absolute lg:text-[20rem] opacity-10 font-sans2 mt-18 text-white mb-4" >
+                    Contact  </h1>  
+                <h2 class="relative text-6xl font-sans2  text-blue-600   mb-4" data-aos="fade-up" data-aos-duration="2800">Contact Me</h2>
+            </div>
+        <div class="flex flex-col md:flex-row justify-center mt-24"  data-aos="fade-up" data-aos-duration="3000">
+            <div class="md:w-1/2 bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300  hover:shadow-blue-500 hover:shadow-[0_0_25px_10px]  hover:scale-105  p-6">
                 <h3 class="text-2xl font-semibold text-white mb-4">Get in Touch</h3>
                 <form action="#" method="POST">
                     <div class="mb-4">
@@ -355,8 +445,8 @@
                     <button type="submit" class="bg-yellow-400 text-gray-900 font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition duration-200">Send Message</button>
                 </form>
             </div>
-            <div class="md:w-1/2 md:ml-8 mt-8 md:mt-0">
-                <h3 class="text-2xl font-semibold text-white mb-4">Connect with Me</h3>
+            <div class="md:w-1/2 md:ml-8 mt-8 md:mt-0"data-aos="fade-up" data-aos-duration="3000">
+                <h3 class="text-2xl font-semibold text-white mb-4" >Connect with Me</h3>
                 <p class="text-gray-400 mb-4">Feel free to reach out through any of the platforms below:</p>
                 <ul class="text-gray-400 space-y-2">
                     <li><a href="mailto:yusufthalibb@gmail.com" class="hover:text-yellow-400">Email : yusufthalibb@gmail.com</a></li>
@@ -371,7 +461,33 @@
 
 
 
+        <!-- Back to Top Button (place at the bottom of body) -->
+        <button id="backToTopBtn" class="fixed bottom-5 right-5 bg-blue-500 text-white font-bold py-2 px-4 cursor-pointer hover:bg-gray-700 rounded-full opacity-0 transition-opacity duration-300">
+            <i class="fas fa-arrow-up "></i> <!-- Font Awesome Icon -->
+        </button>
         
+
+    <!-- JavaScript for the Button Functionality -->
+    <script>
+        // Get the button
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        // Show button when user scrolls down 200px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopBtn.classList.remove("opacity-0");
+                backToTopBtn.classList.add("opacity-100");
+            } else {
+                backToTopBtn.classList.remove("opacity-100");
+                backToTopBtn.classList.add("opacity-0");
+            }
+        };
+
+        // Scroll to the top when the button is clicked
+        backToTopBtn.addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
     </div>
 
     <!-- Typed.js for typing effect -->
@@ -385,12 +501,18 @@
         });
 
         var typed = new Typed('.typed', {
-            strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+            strings: ["Frontend Developer", "UI/UX Designer", "Web Developer"],
             typeSpeed: 70,
             backSpeed: 55,
             loop: true
         });
     </script>
+
+    <!-- Animate On scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
